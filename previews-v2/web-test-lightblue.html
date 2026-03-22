@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prof. Chang | Light Blue Preview</title>
+  <style>
+    :root {
+      --bg: #eef7ff;
+      --bg2: #dbeeff;
+      --card: rgba(255,255,255,0.82);
+      --line: rgba(125, 170, 215, 0.28);
+      --text: #16324f;
+      --muted: #4f6b87;
+      --accent: #3b82f6;
+      --accent2: #7dd3fc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Noto Sans CJK TC", "Microsoft JhengHei", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(125,211,252,.42), transparent 24%),
+        radial-gradient(circle at bottom left, rgba(59,130,246,.18), transparent 28%),
+        linear-gradient(135deg, var(--bg), var(--bg2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+    }
+    .card {
+      width: min(980px, 100%);
+      border: 1px solid var(--line);
+      background: var(--card);
+      backdrop-filter: blur(12px);
+      border-radius: 28px;
+      padding: 44px;
+      box-shadow: 0 22px 60px rgba(76, 138, 198, .16);
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(59,130,246,.10);
+      color: #2563eb;
+      border: 1px solid rgba(59,130,246,.16);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 56px;
+      line-height: 1.05;
+      color: #102a43;
+    }
+    .lead {
+      margin: 0 0 26px;
+      font-size: 22px;
+      line-height: 1.8;
+      color: var(--muted);
+      max-width: 760px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .item {
+      border: 1px solid rgba(125,170,215,.24);
+      background: rgba(255,255,255,.66);
+      border-radius: 20px;
+      padding: 22px;
+    }
+    .label {
+      font-size: 14px;
+      color: #2563eb;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .value {
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--text);
+      word-break: break-word;
+    }
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 720px) {
+      .card { padding: 28px 22px; }
+      h1 { font-size: 40px; }
+      .lead { font-size: 18px; }
+      .grid { grid-template-columns: 1fr; }
+      .value { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Light Blue Academic Preview</div>
+    <h1>Prof. Chang</h1>
+    <p class="lead">專注於 <strong>AI 模型訓練與應用</strong>，結合研究、教學與技術實作，持續推進人工智慧在真實場域中的落地與價值轉化。</p>
+    <section class="grid">
+      <article class="item">
+        <div class="label">研究方向</div>
+        <div class="value">AI 模型訓練與應用</div>
+      </article>
+      <article class="item">
+        <div class="label">GitHub</div>
+        <div class="value"><a href="https://github.com/pychang-ai" target="_blank">github.com/pychang-ai</a></div>
+      </article>
+      <article class="item" style="grid-column: 1 / -1;">
+        <div class="label">Gmail</div>
+        <div class="value"><a href="mailto:pychang@nkust.edu.tw">pychang@nkust.edu.tw</a></div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
